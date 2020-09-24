@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+    <!--Social network tag-->
+    <!--Basic-->
+    <meta content="HI3 Valkyries" name="Generator">
+    <meta content="valkyrie, valkyries" name="keywords">
+    <link href=”https://dearaison.github.io″ rel=”author”>
+
+    <!--Open graph-->
+    <meta content="https://dearaison.github.io/HI3/" property="og:url">
+    <meta content="website" property="og:type">
+    <meta content="Honkai Impact 3rd Valkyries v4.0" property="og:title">
+
+    <meta content="http://dearaison.github.io/HI3/images/hi3-valkyries-header.png" property="og:image"/>
+    <meta content="https://dearaison.github.io/HI3/images/hi3-valkyries-header.png" property="og:image:secure_url"/>
+    <meta content="Honkai Impact 3rd Banner" property="og:image:alt"/>
+
+    <meta content="Một trang web ghi lại tên viết tắt của các battlesuits dành cho các bạn newbie"
+          property="og:description"/>
+    <meta content="Một trang web ghi lại tên viết tắt của các battlesuits dành cho các bạn newbie" name="description">
+    <meta content="DEA Raison" property="og:site_name"/>
+    <meta content="vi_VN" property="og:locale">
+    <meta content="noodp" name="robots">
+
+    <!--Geo tag get from: https://www.geo-tag.de/generator/en.html-->
+    <meta content="HI3 Valkyries" name="DC.title"/>
+    <meta content="VN" name="geo.region"/>
+    <meta content="Ho Chi Minh City" name="geo.placename"/>
+    <meta content="10.754557;106.720636" name="geo.position"/>
+    <meta content="10.754557, 106.720636" name="ICBM"/>
+
+    <title>Honkai Impact 3rd Valkiries v4.0</title>
+    <link href="../general/images/DEARaison.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!-- CDN CSS-->
+    <!-- Bootrstrap-->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet">
+    <!-- Font Awesome-->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/d1e9580f34.js"></script>
+    <!-- Local CSS-->
+    <link href="../general/css/general-style.css" rel="stylesheet">
+    <link href="css/hi3-main-theme.css" rel="stylesheet">
+    <link href="../general/css/matrix-rain-effect.css" rel="stylesheet">
+    <link href="css/valkyries-image-box.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="matrix-rain-panel">
+    <!-- Where the text drop down was drawn -->
+    <canvas id="m"></canvas>
+</div>
+
+<div class="body-panel container">
+    <header class="card-header">
+        <img alt="Banner" class="img-fluid rounded" height="100%" src="images/hi3-valkyries-header.png" width="100%"/>
+        <h1 class="rounded">Valkyries <span>v4.0</span></h1>
+    </header>
+    <main class="container">
+        <!--Kiana-->
+        <section>
+            <div>
+                <h2 class="d-flex justify-content-center">
+                    <img alt="Kiana" class="img-fluid" height="" src="images/topic-header/kiana-topic.png" width="100%">
+                </h2>
+            </div>
+            <div class="container mt-40">
+                <div class="row mt-30 justify-content-center">
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Herrscher of the Void" class="img-fluid rounded"
+                                 src="images/kiana/herrscher-of-the-void.png">
+                            <h3 class="title">
+                                Herrscher of the Void
+                                <br>
+                                <span>(HoV)</span>
+                            </h3>
+                            <div class="box-content bio">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Herrscher_of_the_Void"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Knight Moonbeam" class="img-fluid rounded"
+                                 src="images/kiana/knight-moonbeam.png">
+                            <h3 class="title">
+                                Knight Moonbeam
+                                <br>
+                                <span>(KMB/ML)</span>
+                            </h3>
+                            <div class="box-content bio">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Knight_Moonbeam"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Divine Prayer" class="img-fluid rounded"
+                                 src="images/kiana/divine-prayer.png">
+                            <h3 class="title">
+                                Divine Prayer
+                                <br>
+                                <span>(DP)</span>
+                            </h3>
+                            <div class="box-content psy">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Divine_Prayer"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Void Drifter" class="img-fluid rounded"
+                                 src="images/kiana/void-drifter.png">
+                            <h3 class="title">
+                                Void Drifter
+                                <br>
+                                <span>(VD/Kiana core)</span>
+                            </h3>
+                            <div class="box-content mech">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Void_Drifter"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Valkyrie Ranger" class="img-fluid rounded"
+                                 src="images/kiana/valkyrie-ranger.png">
+                            <h3 class="title">
+                                Valkyrie Ranger
+                                <br>
+                                <span>(VR/RG/Ranger)</span>
+                            </h3>
+                            <div class="box-content mech">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Valkyrie_Ranger"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="White Comet" class="img-fluid rounded"
+                                 src="images/kiana/white-comet.png">
+                            <h3 class="title">
+                                White Comet
+                                <br>
+                                <span>(WC)</span>
+                            </h3>
+                            <div class="box-content mech">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/White_Comet"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Mei-->
+        <section>
+            <div>
+                <h2 class="d-flex justify-content-center">
+                    <img alt="Mei" class="img-fluid" height="" src="images/topic-header/mei-topic.png" width="100%">
+                </h2>
+            </div>
+            <div class="container mt-40">
+                <div class="row mt-30 justify-content-center">
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Lightning Empress" class="img-fluid rounded"
+                                 src="images/mei/lightning-empress.png">
+                            <h3 class="title">
+                                Lightning Empress
+                                <br>
+                                <span>(LE)</span>
+                            </h3>
+                            <div class="box-content psy">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Lightning_Empress"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Shadow Dash" class="img-fluid rounded"
+                                 src="images/mei/shadow-dash.png">
+                            <h3 class="title">
+                                Shadow Dash
+                                <br>
+                                <span>(SD)</span>
+                            </h3>
+                            <div class="box-content mech">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Shadow_Dash"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Striker Fulminata" class="img-fluid rounded"
+                                 src="images/mei/striker-fulminata.png">
+                            <h3 class="title">
+                                Striker Fulminata
+                                <br>
+                                <span>(SF/Mei core)</span>
+                            </h3>
+                            <div class="box-content bio">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Striker_Fulminata"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Valkyrie Bladestrike" class="img-fluid rounded"
+                                 src="images/mei/valkyrie-bladestrike.png">
+                            <h3 class="title">
+                                Valkyrie Bladestrike
+                                <br>
+                                <span>(VBS/Bladestrike)</span>
+                            </h3>
+                            <div class="box-content bio">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Valkyrie_Bladestrike"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Crimson Impulse" class="img-fluid rounded"
+                                 src="images/mei/crimson-impulse.png">
+                            <h3 class="title">
+                                Crimson Impulse
+                                <br>
+                                <span>(CI)</span>
+                            </h3>
+                            <div class="box-content bio">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Crimson_Impulse"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Bronya-->
+        <section>
+            <div>
+                <h2 class="d-flex justify-content-center">
+                    <img alt="Bronya" class="img-fluid" height="" src="images/topic-header/bronya-topic.png"
+                         width="100%">
+                </h2>
+            </div>
+            <div class="container mt-40">
+                <div class="row mt-30 justify-content-center">
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Herrscher of Reason" class="img-fluid rounded"
+                                 src="images/bronya/herrscher-of-reason.png">
+                            <h3 class="title">
+                                Herrscher of Reason
+                                <br>
+                                <span>(HoR)</span>
+                            </h3>
+                            <div class="box-content mech">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Herrscher_of_Reason"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Black Nucleus" class="img-fluid rounded"
+                                 src="images/bronya/black-nucleus.png">
+                            <h3 class="title">
+                                Black Nucleus
+                                <br>
+                                <span>(BN/NP)</span>
+                            </h3>
+                            <div class="box-content bio">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Black_Nucleus"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Wolf's Dawn" class="img-fluid rounded"
+                                 src="images/bronya/wolf's-daw.png">
+                            <h3 class="title">
+                                Wolf's Dawn
+                                <br>
+                                <span>(WD)</span>
+                            </h3>
+                            <div class="box-content psy">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Wolf's_Dawn"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Dimension Breaker" class="img-fluid rounded"
+                                 src="images/bronya/dimension-breaker.png">
+                            <h3 class="title">
+                                Dimension Breaker
+                                <br>
+                                <span>(DB)</span>
+                            </h3>
+                            <div class="box-content mech">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Dimension_Breaker"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Yamabuki Armor" class="img-fluid rounded"
+                                 src="images/bronya/yamabuki-armor.png">
+                            <h3 class="title">
+                                Yamabuki Armor
+                                <br>
+                                <span>(YA/YMBK)</span>
+                            </h3>
+                            <div class="box-content psy">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Yamabuki_ Armor"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Drive Kometa" class="img-fluid rounded"
+                                 src="images/bronya/drive-kometa.png">
+                            <h3 class="title">
+                                Drive Kometa
+                                <br>
+                                <span>(DK/Bronya core)</span>
+                            </h3>
+                            <div class="box-content psy">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Drive_Kometa"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Snowy Sniper" class="img-fluid rounded"
+                                 src="images/bronya/snowy-sniper.png">
+                            <h3 class="title">
+                                Snowy Sniper
+                                <br>
+                                <span>(SS)</span>
+                            </h3>
+                            <div class="box-content bio">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Snowy_Sniper"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Valkyrie Chariot" class="img-fluid rounded"
+                                 src="images/bronya/valkyrie-chariot.png">
+                            <h3 class="title">
+                                Valkyrie Chariot
+                                <br>
+                                <span>(VC/CRT)</span>
+                            </h3>
+                            <div class="box-content psy">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Valkyrie_Chariot"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Selee-->
+        <section>
+            <div>
+                <h2 class="d-flex justify-content-center">
+                    <img alt="Seele" class="img-fluid" height="" src="images/topic-header/selee-topic.png" width="100%">
+                </h2>
+            </div>
+            <div class="container mt-40">
+                <div class="row mt-30 justify-content-center">
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Stygian Nymph" class="img-fluid rounded" src="images/selee/stygian-nymph.png">
+                            <h3 class="title">
+                                Stygian Nymph
+                                <br>
+                                <span>(SN)</span>
+                            </h3>
+                            <div class="box-content quantum">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Stygian_Nymph"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col col-sm-4 col-md-4 col-xl-3 img-box">
+                        <div class="box8 rounded">
+                            <img alt="Swallowtail Phantasm" class="img-fluid rounded"
+                                 src="images/selee/swallowtail-phantasm.png">
+                            <h3 class="title">
+                                Swallowtail Phantasm
+                                <br>
+                                <span>(SP)</span>
+                            </h3>
+                            <div class="box-content quantum">
+                                <ul class="icon">
+                                    <li><a href="https://honkaiimpact3.gamepedia.com/Swallowtail_Phantasm"><i
+                                            class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="card-footer">
+        <address>
+            <h1>Created by DEA Raison.</h1>
+            Contact email: <a href="mailto:mrbaotruongit@gmail.com">mrbaotruongit@gmail.com</a>.
+        </address>
+        <p>This web page is used for Non-commercial and Community purpose only.</p>
+        <p>The images are being used in this web page are collected from
+            <a href="https://3rdguide.com/" target="_blank">3rdguide.com</a>
+            and
+            <a href="https://honkaiimpact3.gamepedia.com/Honkai_Impact_3_Wiki" target="_blank">Honkai Impact 3rd
+                Wiki</a>
+        </p>
+    </footer>
+</div>
+
+<!-- CDN JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- Local JS-->
+<script src="../general/js/matrix-rain-effect.js"></script>
+</body>
+</html>
