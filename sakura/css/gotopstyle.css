@@ -1,0 +1,22 @@
+/* CSS Document */
+
+#go_top {
+    position: fixed;
+    left: auto;
+    right: 20px;
+    top: auto;
+    bottom: 20px;
+    outline: none;
+    overflow: hidden;
+    background: url(../images/gotop.png) no-repeat;
+    height: 171px;
+    width: 60px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    z-index: 999999;
+    opacity: 1;
+    display: none;
+    background-size: 100% 100%;
+}
+

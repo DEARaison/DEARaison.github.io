@@ -1,0 +1,19 @@
+   <div style="height: 50000px; width: 100%; z-index: -1; position: relative; background-image: url('../images/Sakura.jpg'); background-size: 100%; background-repeat: no-repeat">
+        <div style="height: 100px; width: 100%; background-color: rgba(183,211,255,0.0); position: absolute;z-index: 1;">
+            aaaaaaaaaaaaa
+        </div>
+    </div>
+
+ <div class="topic-background-left" style="background-image: url('../images/Sakura_topic.png');">
+        <div class="container topic-content-right sakura-topic-content">
+            <div class="row justify-content-end">
+                <div class="col-md-8">
+                    <h2>Cherry Blossom</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    border-bottom: solid 1px rgba(229,229,229,.67);
